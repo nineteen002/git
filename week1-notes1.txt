@@ -1,0 +1,14 @@
+Remote Repository:
+
+-Hosted in a data center or the cloud
+-Official state of the project
+
+Creating a new remote repository from existing local Repo:
+Go to github
+Create new repository, choose name, etc.
+Then on git bash add commands:
+
+git remote add origin <url>
+
+
+                                                       
