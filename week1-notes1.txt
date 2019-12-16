@@ -11,4 +11,32 @@ Then on git bash add commands:
 git remote add origin <url>
 
 
-                                                       
+CLONING VS PULLING/PUSHING
+__________________________________________
+Have a local Repo? 	|	Task	  |
+-------------------------------------------
+No existing local repo	| Clone the remote|
+-------------------------------------------
+Yes, already have one	| Add the remote  |
+-------------------------------------------
+
+
+CLONING: Creating a copy from the remote repository to a local repository
+
+	git clone <url> [ local directory ]
+
+
+ADD remote REPO to LOCAL repo:
+
+	git remote add <name> <url>
+
+PUSH to a new Remote Repo:
+pushing means adding commits to the remote repo
+
+	git push [<repository>] [<branch>]
+
+INFORMATION OF REMOTE REPO:
+
+	git remote --verbose / git remote -v
+
+

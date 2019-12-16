@@ -1,0 +1,13 @@
+GRAPH MODELS:
+
+Acyclic : No cycles or non circular, there is no way to go back to a node that you have already visited.
+
+Cyclic : Circular or has cycles
+
+Directed : There is a path or direction
+
+
+GIT uses a DIRECTED ACYCLIC GRAPH
+
+a MERGE occurs when a commit has mora than one parent.
+Commits point to the PARENT commits
