@@ -1,0 +1,19 @@
+Commit to a local Repo (CLI):
+
+- git status : view status of files in the working area and staging area.
+Will show untracked files
+
+
+-git add : Add content to the staging area which will be part of the next commit.
+	git add <files or directory>  (adds file specified to staging area)
+	git add .   (Adds all untracked files to staging area)
+
+- git commit : Add staged content to local repo as a commit.
+All prev committed files are also included (creates snapshot of entire project)
+	git commit -m "<short message to describe commit>"
+	git commit 
+
+- git log : View commit history
+	git log --oneline (shows condensed version of the log)
+	git log -# (shows the most recent # of commits, ex: git log -2)
+
