@@ -1,0 +1,16 @@
+GIT OBJECTS:
+
+	- Commit Object: (Text file) Contains user commit info, commit message, other references.
+	- Annotated Tag: Reference to specific commit
+	- Tree: Directories and filenames in the project
+	- Blob: Content of a file in the project
+
+GIT IDS / hash / checksum : name of a git object  (40 hex string)
+
+------------------------------
+
+REFERENCES: 
+
+master: default name of main branch of the repo
+BRANCH LABEL: points to most recent commit of the branch (also called tipo of the branch)
+HEAD: reference to the current commit (one HEAD per local repository)
