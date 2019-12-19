@@ -1,0 +1,23 @@
+REFERENCES:
+
+	git status
+	git show HEAD
+	git show master
+	
+	git push <remote> --tags
+
+TAGS:
+	git tag -a -m "<message>" <name of the tag>
+	ex: git tag -a -m " feature 1" v0.1
+
+	git push origin v0.1
+
+HEAD: reference to current commit, usually poitn to the branch label of the current branch
+
+
+BRANCHES : A branch is a set of commits that trace back to the projects first commit
+	-Fast and easy to create
+	- Enable experimentation
+	-Enable team dev
+
+
