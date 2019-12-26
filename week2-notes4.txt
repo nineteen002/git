@@ -1,0 +1,38 @@
+BRANCHES: A branch is a set of commits that trace back to the projects first commit
+	- Fast and easy to create
+	- Enable experimentation
+	- Enable team dev
+
+	git branch: see all the list of branches
+	git branch <name>: Only creates a branch (which only creates a branch label, but does not change to that branch)
+	git checkout -b <name>: Combines git branch and git checkout, it switches to the new branch created
+
+CHECKOUT:
+	- Switches current commit (updates HEAD reference) 
+	- Updates working tree 
+	** git checkout -b only works when creating a new branch, does not work with existing branches **
+
+
+UPDATE HEAD Reference: 
+Use checkout that updates the HEAD reference and working tree
+
+DETACHED HEADS:
+	Directly checking out a commit leads to a detach HEAD reference,
+	which means that instead of pointing to a branch label it points direclty 
+	to a commit in a branch.
+
+	To only view a detached head in the master branch is OK
+	BUT if you want to change something it is best to create a branch on that commit first
+
+DELETING A BRANCH:
+	Does not delete any commits. Usually deleted after a merge.
+	IF there is a commit on the branch that has not been merged then git usually wont allow deleting it.
+
+	git branch -d < name > : Normal delete
+	git branch -D < name > : Forces delete
+
+UNDO DELETING BRANCH WITH UNMERGED COMMITS:
+
+	git reflog : (ONLY works LOCALLY) returns a local list of recent HEAD commits
+then
+	git checkout -b <name> <SHA-1>
