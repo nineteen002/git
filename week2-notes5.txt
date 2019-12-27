@@ -1,0 +1,40 @@
+MERGE: Combines the work of independent branches.
+	
+Base Branch: Usually longer than topic branch, usually called master
+
+MERGE COMMIT: The commit of topic branch is included in the base branch
+
+TYPES OF MERGES:
+	- Fast-forward merge
+	- Merge commit
+	- Squash merge
+	- Rebase
+
+
+FAST-FORWARD MERGE:
+Moves the base branch label to the tip of the topic branch.
+ONLY possible if no other commits have been made to the base branch since the topic branch was made
+	Steps:
+		1) git checkout master
+		2) git merge < branch name >
+		3) git branch -d < branch name >
+
+MERGE COMMIT: 
+Combines the commits at the tips of the merged branches.
+Places the result in the merge commit.
+A merge commit ALWAYS has multiple parents.
+	STEPS:	
+		1) git checkout master
+		2) git merge < branch name >
+		3) git branch -d < branch name >
+
+* Combining the work of multiple commits may cause a MERGE CONFLICT * 
+
+MERGE CONFLICT: Occurs when both branches changes the same thing in different ways
+
+
+* MERGE COMMIT (NO FAST-FORWARD):
+	1) git checkout master
+	2) git merge --no--ff < branch name >
+	3) git branch -d < branch name>
+
