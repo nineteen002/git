@@ -1,0 +1,28 @@
+RESOLVING MERGE CONFLICTS:
+When trying to combine the work of multiple branhces, git will try to resolve the issues automatically, however in some cases it will need the input of the user, this is a Merge conflict. 
+
+Git will automatically merge different parts of files. 
+
+*It is recommended to make small, frequent merges  
+
+RESOLVE CONFLICT: 
+
+	1) Checkout master 
+
+	2) Merge 
+
+		Conflict 
+
+	3) Open file in conflict and resolve 
+
+	4) Stage file ( git add < file > ) 
+
+	5) Commit 
+
+	6) Delete branch 
+
+ 
+
+Conflicted hunks are surrounded by <<<<<<<< and >>>> 
+
+Text to be merged are marked by ======== and >>>>>> 
