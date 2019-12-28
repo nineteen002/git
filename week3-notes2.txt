@@ -1,0 +1,25 @@
+Tracking Branch: Local branch that represents a remote branch 
+
+They update separetly from the remote branch and local branch 
+
+Updated with commands like clone, fetch, pull and push 
+
+Intermediary between local and remote 
+
+ 
+
+Example of a Tracking Branch name:   <remote>/<branch> 
+
+Remote should always be origin becauses it is the URL for the remote repo 
+
+ 
+
+VIEW TACKING BRANCH NAMES: 
+
+git branch --all 
+
+ 
+
+Change default remote racking branch: 
+
+git remote set-head < remote >  <branch> 
